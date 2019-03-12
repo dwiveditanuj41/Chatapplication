@@ -1,0 +1,48 @@
+<html ng-app='chatapp'>
+<head>
+    <title> Chat </title>
+<script src ="/angular.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"> </script>
+<link href="/stylesheet.css" rel="stylesheet" />
+<script src="/frontend.js"></script>
+</head>
+
+
+<body ng-controller="AppController">
+	
+		
+	
+	                    <div id="initialise">
+                           <br /> <br /> <br /><span style="font-family: 'Coiny', cursive; font-size:45px; font-weight: 30px; color:#3f51b5;"> WELCOME <br /> <br /> <span style="font-size:20px; color: #808080;">Enter Username </span></span><br /> <br />
+<br />
+                        <input id="handle" placeholder="Username" type="text" class="text-line" ng-model="name" /> <br /><br /> </span>
+                       <input id= "join" onclick="readonly()" type="button" value="Join" /> 
+                       </div>
+                      
+                        <div id="contentwrap" style="display: none; onbeforeunload="return yourfunction()">
+                            <div id="header" style="font-family: 'Inconsolata', monospace; text-align:center;"> <span style="color:White; font-weight: 20px; font-size: 30px;" >Welcome <strong style="color:white; font-size: 30px;"> {{name}},</strong>   <div style="color:green; display: inline;"> </div>You are online now </span> </div>
+                       
+                        <span id="output"> </span>
+                         <input id="message" placeholder="message" type="text" class="form-control" />
+                        
+                        <button id="send" > Send </button>
+                        
+                        </div>
+                        
+
+
+                       
+                    
+                   
+         
+
+<script src="/chat.js" > </script>
+
+
+
+
+</body>
+</html>
